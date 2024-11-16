@@ -1,6 +1,6 @@
 {
-  "name": "tailwind-box",
-  "version": "0.0.2",
+  "name": "tailwindbox",
+  "version": "1.0.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "exports": {
