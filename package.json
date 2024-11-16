@@ -1,9 +1,24 @@
 {
   "name": "tailwind-box",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "scripts": {
+    "build": "yarn build:cjs && yarn build:esm",
+    "build:cjs": "tsc --p ./tsconfig.cjs.json",
+    "build:esm": "tsc --p ./tsconfig.esm.json"
+  },
+  "author": {
+    "name": "jnoncode"
+  },
   "devDependencies": {
     "typescript": "^5.6.3"
-  }
+  },
+  "license": "MIT"
 }
