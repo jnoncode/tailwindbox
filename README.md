@@ -1,13 +1,6 @@
-# TailwindBox
+ ![banner](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FN3vND%2FbtsKLbC1esx%2FGZROQkcfMi93Iu0HvPSh3K%2Fimg.png)
 
-Easily manage TailwindCSS styles with simple object-like structures and conditions.
 
-## 🌟 Features
-
-- **Object-Like Structure**: Define TailwindCSS styles in an object-based format.
-- **Conditional Classes**: Apply classes dynamically based on your application's state.
-- **Improved Readability**: Simplify long and complex class strings.
-- **Lightweight**: A minimal library designed for TailwindCSS users.
 
 ## 🔧 Installation
 
@@ -41,15 +34,21 @@ function App() {
 export default App;
 ```
 
-### Example Breakdown:
-
 - `base`: Always applies the base styles (`p-4 rounded-lg shadow-md`).
 - `dark`: Applies `bg-gray-800 text-white` only if `isDarkMode` is true.
 - `light`: Applies `bg-white text-black` only if `isDarkMode` is false.
 
+## 🌟 Features
+
+- **Object-Like Structure**: Define TailwindCSS styles in an object-based format.
+- **Conditional Classes**: Apply classes dynamically based on your application's state.
+- **Improved Readability**: Simplify long and complex class strings.
+- **Lightweight**: A minimal library designed for TailwindCSS users.
+
+
 ## 📚 API Reference
 
-### `tw(config: StyleConfig): string`
+**`tw(config: StyleConfig): string`**
 
 **Parameters**:
 
@@ -61,7 +60,7 @@ export default App;
 
 - A single string with the resulting TailwindCSS classes.
 
-### Example Config
+**Example**
 
 ```js
 const styles = tw({
