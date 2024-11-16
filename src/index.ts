@@ -7,7 +7,7 @@ type StyleConfig = {
   [key: string]: string | ConditionalClass;
 };
 
-export function tw(config: StyleConfig): string {
+export const tw = (config: StyleConfig): string => {
   const classes: string[] = [];
 
   for (const key in config) {
@@ -21,4 +21,4 @@ export function tw(config: StyleConfig): string {
   }
 
   return classes.join(" ");
-}
+};
