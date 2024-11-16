@@ -1,6 +1,6 @@
 {
   "name": "tailwindbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "exports": {
@@ -20,5 +20,21 @@
   "devDependencies": {
     "typescript": "^5.6.3"
   },
+  "description": "A library for managing tailwindcss styles with object-like structures and conditional logic.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jnoncode/tailwindbox"
+  },
+  "keywords": [
+    "tailwindcss",
+    "dynamic styles",
+    "conditional styles",
+    "object-based styles",
+    "style manager",
+    "CSS utility",
+    "React",
+    "JavaScript",
+    "TypeScript"
+  ],
   "license": "MIT"
 }
